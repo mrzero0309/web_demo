@@ -134,15 +134,14 @@ header{
 .icon_branch_deverloper_up{
      position: absolute;
      margin: -24px 70px;
+     font-size: 20px;
+     background-color: #A4C8FF;
+     width: 55px;
+     height: 55px;
+     border-radius: 50px;
+ 
 }
 
-.icon_branch_deverloper_up{
-    background-color: #A4C8FF;
-    width: 55px;
-    height: 55px;
-    border-radius: 50px;
-
-}
 .text_branch{
     color: #fff;
     display: flex;
