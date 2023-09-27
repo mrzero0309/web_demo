@@ -96,3 +96,58 @@ header{
     position: absolute;
     padding: 0px 0px 0px 450px;
 }
+
+/* Section */
+.heading_sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1024px;
+    padding: 50px 0 30px 0;
+}
+.sub_decription{
+    width: 555px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.branchs{
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    padding-top: 50px;
+}
+.branch_deverloper,
+.branch_internet,
+.branch_app,
+.branch_deverloper_up{
+    width :206px;
+    height: 277px;
+    background-color:black;
+}
+.icon_branch_deverloper,
+.icon_branch_app,
+.icon_branch_internet,
+.icon_branch_deverloper_up{
+     position: absolute;
+     margin: -24px 70px;
+}
+
+.icon_branch_deverloper_up{
+    background-color: #A4C8FF;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+
+}
+.text_branch{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 50px 20px 50px;
+    font-size: 16px;
+}
