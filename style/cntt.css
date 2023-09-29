@@ -114,7 +114,8 @@ header{
     align-items: center;
     justify-content: center;
 }
-.branchs{
+.branchs,
+.news{
     display: flex;
     justify-content: space-between;
     width: 1024px;
@@ -133,15 +134,11 @@ header{
 .icon_branch_internet,
 .icon_branch_deverloper_up{
      position: absolute;
-     margin: -24px 70px;
+     margin: -42px 88px;
      font-size: 20px;
-     background-color: #A4C8FF;
-     width: 55px;
-     height: 55px;
-     border-radius: 50px;
- 
+     width: 30px;
+     height: 30px;
 }
-
 .text_branch{
     color: #fff;
     display: flex;
@@ -149,4 +146,39 @@ header{
     justify-content: center;
     margin: 100px 50px 20px 50px;
     font-size: 16px;
+}
+.container_icon{
+    background-color: #A4C8FF;
+    height: 55px;
+    width: 55px;
+    margin: -20px 0 0 75px;
+    border-radius: 50px;
+}
+.news{
+
+}
+.new_section{
+    width: 206px;
+    height: 227px;
+    /* background-color: black; */
+    margin-left: 15px;
+}
+
+.image_new{
+
+}
+.icon_calendar{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+.day_new{
+    color: black;
+    font-size: 8px;
+    opacity: 0.5;
+}
+.text_new{
+    font-weight: 700;
+    display: block;
+    opacity: 1;
 }
