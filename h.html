@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chuyển đổi chế độ tối/sáng bằng thanh trượt</title>
+  <title>Chuyển đổi chế độ tối/sáng với thanh trượt tùy chỉnh</title>
+  <style>
+    /* CSS cho thanh trượt */
+    .slider-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .slider-label {
+      margin-right: 10px;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      width: 100px;
+      height: 10px;
+      border-radius: 5px;
+      background: #d3d3d3;
+      outline: none;
+      transition: background 0.2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #4caf50;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 50%;
+      background: #4caf50;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <h1>Chế độ tối/sáng</h1>
-  <input type="range" id="themeSlider" min="0" max="1" step="1" value="0">
-  <label for="themeSlider">Chế độ</label>
+  <div class="slider-container">
+    <span class="slider-label">Chế độ:</span>
+    <input type="range" id="themeSlider" min="0" max="1" step="1" value="0" class="slider">
+  </div>
 
   <script>
     const themeSlider = document.getElementById('themeSlider');
@@ -46,22 +88,5 @@
       body.classList.add('light-mode');
     }
   </script>
-
-  <style>
-    /* CSS cho chế độ tối */
-    .dark-mode {
-      background-color: #111;
-      color: #fff;
-    }
-
-    /* CSS cho chế độ sáng */
-    .light-mode {
-      background-color: #fff;
-      color: #111;
-    }
-    #themeSlider{
-        width: 35px;
-    }
-  </style>
 </body>
 </html>
