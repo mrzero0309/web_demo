@@ -22,11 +22,9 @@ header{
     background-color: #111;
     color: #fff;
   }
-
   /* CSS cho chế độ sáng */
-  .light-mode {
+.light-mode {
     background-color: #fff;
-    color: #111;
   }
 .logo{
     padding: 10px;
@@ -48,20 +46,43 @@ header{
     position: absolute;
     z-index: -1;
 }
-.menu a{
+.menu .text_menu{
     text-decoration: none;
     color: black;
     padding: 15px;
     font-size: 13px;
     font-weight: 400;
+    transition: 0.8s;
+    transition-timing-function:linear;
 
+}
+.text_menu{
+    width: 90px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.menu .text_menu:hover{
+    background-color: #A4C8FF;
+    color: #000;
+    border-radius:25px ;
+}
+.menu .login:hover{
+    background-color: #f7c8B6;
+    border: 1px solid #f7c8B6 ;
+}
+.menu .signup:hover{
+    border: 1px solid #000;
+    background-color:unset;
 }
 .login-signup{
     display: flex;
 }
 .login{
-    border-style:solid ;
-    border-width: 1px;
+    border: 1px solid #000;
+    transition: 0.8s;
+    transition-timing-function: linear;
 }
 .login ,
 .signup{
@@ -70,12 +91,16 @@ header{
     border-radius: 25px;
     font-size: 13px;
     font-weight: 400;
+    text-decoration: none;
+    color: #000;
 }
 .signup{
     width: 73px;
     height: 24px;
     background-color: #f7c8B6;
     padding-left: 14px;
+    transition: 0.8s;
+    transition-timing-function: linear;
 }
 
 #themeSlider{
@@ -128,7 +153,8 @@ header{
     font-size: 14px;
 }
 .btn_seen{
-    background-color: #D9D9D9;
+    background-color: unset;
+    border: 1px solid #000;
     width: 146px;
     height: 38px;
     border-radius: 80px;
@@ -136,6 +162,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 4;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+.btn_seen:hover{
+    border: 1px solid #A4C8FF;
+    background-color: #A4C8FF;
+    color: #000;
+    cursor: pointer;
+
 }
 .img_header{
     position: absolute;
@@ -172,45 +209,83 @@ header{
 .branch_deverloper_up{
     width :206px;
     height: 277px;
-    background-color:#000;
+    border: 0.5px solid rgba(000, 0, 0, 0.6);
+
 }
 .icon_branch_deverloper,
 .icon_branch_app,
 .icon_branch_internet,
 .icon_branch_deverloper_up{
-     position: absolute;
-     margin: -42px 88px;
+    position: absolute;
+     margin: -7px 88px;
      font-size: 20px;
      width: 30px;
      height: 30px;
+    z-index: 4;
 }
 .text_branch{
-    color: #fff;
+    color: #000;
+    margin: 150px 50px 20px 10px;
+    width: 100%;
+    font-size: 15px;
+}
+.sub_branch{
+    margin-top: 10px;
+    display: block;
+}
+.branch_detail{
+    height: 40px;
+    width: 100px;
+    border:1px solid rgba(000, 0, 0, 0.6);
+    border-radius: 30px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 100px 50px 20px 50px;
-    font-size: 16px;
+    align-items: center;
+    margin-top: 5px;
+    transition: 0.8s;
+    transition-timing-function:linear;
+    width: 70%;
+    
+}
+.branch_detail:hover{
+    background-color: #A4C8FF;
+    border: 1px solid #A4C8FF;
+    color: #000;
+    cursor: pointer;
+}
+.branch_dev,
+.branch_inter,
+.branch_application,
+.branch_dev_clc{
+    width:203px;
+    height: 140px;
+    position:absolute;
+    margin-top: 0px;
 }
 .container_icon{
     background-color: #A4C8FF;
+    position: absolute;
+    z-index: 4;
     height: 55px;
     width: 55px;
     margin: -20px 0 0 75px;
     border-radius: 50px;
+    opacity: 0.7;
 }
 .news{
 
 }
 .new_section{
     width: 206px;
-    height: 227px;
+    height: 260px;
     /* background-color: black; */
     margin-left: 15px;
+    border: 0.5px solid rgba(000, 0, 0, 0.6);
 }
 
 .image_new{
-
+    width: 100%;
+    height: 105px;
 }
 .icon_calendar{
     display: inline-block;
@@ -220,10 +295,11 @@ header{
 .day_new{
     color: black;
     font-size: 8px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .text_new{
     font-weight: 700;
     display: block;
     opacity: 1;
+    margin-left: 10px;
 }
