@@ -14,6 +14,7 @@
   // updateRealTime();
 
   // Dark mode 
+ 
   const themeSlider = document.getElementById('themeSlider');
     const body = document.body;
 
@@ -40,13 +41,20 @@
         enableLightMode();
       }
     }
-
+    
+    function enableDarkMode(){
+      darkBackgound.classList.add('background_dark_mode');
+    }
     function enableDarkMode() {
       body.classList.add('dark-mode');
       body.classList.remove('light-mode');
+      
+      
     }
-
+    
     function enableLightMode() {
       body.classList.remove('dark-mode');
       body.classList.add('light-mode');
+      
     }
+  

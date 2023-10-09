@@ -25,7 +25,9 @@ header{
   /* CSS cho chế độ sáng */
 .light-mode {
     background-color: #fff;
+    color: #111;
   }
+
 .logo{
     padding: 10px;
     display: flex;
@@ -197,7 +199,8 @@ header{
     justify-content: center;
 }
 .branchs,
-.news{
+.news,
+.contact_block{
     display: flex;
     justify-content: space-between;
     width: 1024px;
@@ -209,13 +212,13 @@ header{
 .branch_deverloper_up{
     width :206px;
     height: 277px;
-    border: 0.5px solid rgba(000, 0, 0, 0.6);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .icon_branch_deverloper,
 .icon_branch_app,
 .icon_branch_internet,
-.icon_branch_deverloper_up{
+.icon_branch_deverloper_up,
+.container_icon{
     position: absolute;
      margin: -7px 88px;
      font-size: 20px;
@@ -224,7 +227,6 @@ header{
     z-index: 4;
 }
 .text_branch{
-    color: #000;
     margin: 150px 50px 20px 10px;
     width: 100%;
     font-size: 15px;
@@ -257,7 +259,7 @@ header{
 .branch_inter,
 .branch_application,
 .branch_dev_clc{
-    width:203px;
+    width:205px;
     height: 140px;
     position:absolute;
     margin-top: 0px;
@@ -280,7 +282,7 @@ header{
     height: 260px;
     /* background-color: black; */
     margin-left: 15px;
-    border: 0.5px solid rgba(000, 0, 0, 0.6);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image_new{
@@ -302,4 +304,35 @@ header{
     display: block;
     opacity: 1;
     margin-left: 10px;
+}
+.sub_decription{
+
+}
+.contact_block{
+    display: flex;
+    justify-content: space-between;
+}
+.contact_facebook,
+.contact_document,
+.contact_phone,
+.contact_video{
+    margin-left: 15px;
+    width: 205px;
+    height: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact_phone{
+    
+}
+.contact_video{
+    
+}
+.contact_document{
+    
+}
+.icon_contact{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+
 }
